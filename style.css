@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  background: url("./images/bg-mobile.png");
+  background-size: auto 812px;
+  padding: 18vh 3vh;
+  overflow: hidden;
+}
+@media only screen and (max-width: 376px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .upper {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    width: 80%;
+    height: 15vh;
+    padding: 4vh;
+    border-radius: 10px 70px 10px 10px;
+  }
+  .upper__img {
+    width: 50%;
+  }
+  .upper__icon {
+    display: flex;
+    align-items: flex-end;
+    height: 80%;
+    justify-content: space-between;
+    max-width: 60%;
+  }
+  .upper__icon-container {
+    background-color: hsl(229, 57%, 11%);
+    padding: 5px;
+    border-radius: 10px;
+    min-height: 30px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lower {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    width: 85%;
+    height: 15vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 3vh;
+    position: relative;
+  }
+  .lower__description {
+    color: hsl(229, 7%, 55%);
+    font-weight: 400;
+  }
+  .lower__description--color {
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+  }
+  .lower__bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .lower__bar-progress {
+    min-width: 80%;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 25px;
+    padding: 2px;
+  }
+  .lower__bar-gradient {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+    background-image: linear-gradient(
+      45deg,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
+    min-width: 80%;
+    position: relative;
+  }
+  .lower__progress-circle {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 1.6px;
+    right: 2px;
+    border-radius: 100%;
+  }
+  .lower__storage-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: hsl(229, 7%, 55%);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .lower__storage-left {
+    background-color: #fff;
+    width: 40%;
+    display: flex;
+    position: absolute;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    bottom: -30px;
+    right: 80px;
+  }
+  .lower__storage-left-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-right: 10px;
+    color: hsl(229, 57%, 11%);
+  }
+  .lower__storage-left-unit {
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(229, 7%, 55%);
+  }
+}
